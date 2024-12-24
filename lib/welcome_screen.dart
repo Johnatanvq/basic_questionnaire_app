@@ -15,7 +15,7 @@ class WelcomeScreen extends StatelessWidget{
         children: [
           Image.asset(
             image,
-            width: 400,
+            width: 300,
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           SizedBox(

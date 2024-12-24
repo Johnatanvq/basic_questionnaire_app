@@ -28,7 +28,9 @@ class _CustomButtonState extends State<CustomButton> {
         ),
         onPressed: () {},
         icon: const Icon(
-          Icons.arrow_right_alt
+          Icons.arrow_right_alt,
+          size: 40,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
         label: Text(
           widget.text,
