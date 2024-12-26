@@ -19,6 +19,8 @@ class _QuizState extends State<Quiz> {
 //setState es un método flutter que corre el build method tantas veces 
 // identifique si hay alguna diferencia entre la última construcción del ui y del nuevo, y si la hay
 // actualiza automáticamente el build
+
+//CONTENT CONDITIONALLY
   void switchScreen () {
     setState(() {
       activeScreen = QuestionsScreen();
