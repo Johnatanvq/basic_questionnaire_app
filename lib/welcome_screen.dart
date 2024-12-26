@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:adv_basics/label_text.dart';
 
 class WelcomeScreen extends StatelessWidget{
-  const WelcomeScreen ({super.key});
+  const WelcomeScreen (this.startQuiz, {super.key});
 
   final image = 'assets/images/quiz-logo.png';
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
@@ -27,7 +28,41 @@ class WelcomeScreen extends StatelessWidget{
             fontColor: Colors.cyan,
             fontWeight: FontWeight.w500,
           ),
-          CustomButton(text:'EMPEZAR'),
+          // CustomButton(startQuiz, text:'EMPEZAR'),
+          OutlinedButton.icon(
+            onPressed: startQuiz,
+            style: OutlinedButton.styleFrom(
+              side: const BorderSide(
+                width: 5, 
+                color: Color.fromARGB(255, 225, 0, 255)),
+              foregroundColor: Color.fromARGB(255, 255, 255, 255),
+              padding: EdgeInsets.symmetric(
+                vertical: 25,
+                horizontal: 20,
+              ),
+            ),
+            icon: const Icon(
+              Icons.arrow_right_alt,
+              size: 40,
+              color: Color.fromARGB(255, 255, 255, 255),
+            ),
+            label: Text(
+              'EMPEZAR',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 2,
+                shadows: [
+                  Shadow(
+                    color: const Color.fromARGB(255, 0, 0, 0),
+                    offset: Offset(6, 2),
+                    blurRadius: 4,
+                  ),
+                ],
+              )
+            ),
+          ),
         ],
       ),
     );
