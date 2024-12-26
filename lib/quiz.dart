@@ -14,7 +14,13 @@ class Quiz extends StatefulWidget {
 
 class _QuizState extends State<Quiz> {
 
-  Widget activeScreen = const WelcomeScreen(switchScreen);
+  Widget? activeScreen;
+
+  @override
+  void initState() {
+    activeScreen = WelcomeScreen(switchScreen);
+    super.initState();
+  }
 
 //setState es un método flutter que corre el build method tantas veces 
 // identifique si hay alguna diferencia entre la última construcción del ui y del nuevo, y si la hay
