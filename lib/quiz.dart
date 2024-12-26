@@ -1,3 +1,4 @@
+import 'package:adv_basics/questions_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:adv_basics/welcome_screen.dart';
@@ -12,6 +13,17 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+
+  Widget activeScreen = const WelcomeScreen();
+
+//setState es un método flutter que corre el build method tantas veces 
+// identifique si hay alguna diferencia entre la última construcción del ui y del nuevo, y si la hay
+// actualiza automáticamente el build
+  void switchScreen () {
+    setState(() {
+      activeScreen = QuestionsScreen();
+    });
+  }
 
   @override
   Widget build(context){
@@ -28,7 +40,7 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: WelcomeScreen(),
+          child: activeScreen,
         ),
       ),
     );
