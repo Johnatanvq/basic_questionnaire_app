@@ -16,12 +16,6 @@ class _QuizState extends State<Quiz> {
 
   var activeScreen = 'start-screen';
 
-
-//setState es un método flutter que corre el build method tantas veces 
-// identifique si hay alguna diferencia entre la última construcción del ui y del nuevo, y si la hay
-// actualiza automáticamente el build (el build se llama después de que el setState se haya llamado)
-
-//CONTENT CONDITIONALLY
   void switchScreen () {
     setState(() {
       activeScreen = 'questions-screen';
@@ -30,6 +24,12 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(context){
+    Widget screenWidget = WelcomeScreen(switchScreen);
+
+    if (activeScreen == 'questions-screen'){
+      screenWidget = QuestionsScreen();
+    }
+
     return MaterialApp(
       home: Scaffold(
         body: Container(
@@ -43,9 +43,7 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: activeScreen == 'start-screen'
-          ? WelcomeScreen(switchScreen) 
-          : const QuestionsScreen(),
+          child: screenWidget,
         ),
       ),
     );
