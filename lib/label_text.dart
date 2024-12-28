@@ -24,6 +24,7 @@ class LabelText extends StatelessWidget {
         color: fontColor,
         fontWeight: fontWeight,
       ),
+      textAlign: TextAlign.center,
     );
   }
 }
