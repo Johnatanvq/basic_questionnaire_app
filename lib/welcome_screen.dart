@@ -28,7 +28,6 @@ class WelcomeScreen extends StatelessWidget{
             fontColor: Colors.cyan,
             fontWeight: FontWeight.w500,
           ),
-          // CustomButton(startQuiz, text:'EMPEZAR'),
           OutlinedButton.icon(
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(

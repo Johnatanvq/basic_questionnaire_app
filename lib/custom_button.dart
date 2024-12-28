@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatefulWidget {
-  const CustomButton ({super.key, required this.text});
+  const CustomButton ({
+    super.key,
+    required this.text,
+    required this.onTap
+  });
 
   final String text;
+  final void Function() onTap;
 
   @override
   State <CustomButton> createState(){
@@ -15,24 +20,23 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(context) {
     return Container(
-      child: OutlinedButton.icon(
+      child: OutlinedButton(
+        onPressed: widget.onTap,
         style: OutlinedButton.styleFrom(
           side: const BorderSide(
-            width: 5, 
-            color: Color.fromARGB(255, 225, 0, 255)),
+            width: 1, 
+            color: Color.fromARGB(255, 204, 0, 255)),
           foregroundColor: Color.fromARGB(255, 255, 255, 255),
           padding: EdgeInsets.symmetric(
-            vertical: 25,
-            horizontal: 20,
+            vertical: 20,
+            horizontal: 50,
           ),
+          backgroundColor: Color.fromARGB(255, 81, 0, 104),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          )
         ),
-        onPressed: () {},
-        icon: const Icon(
-          Icons.arrow_right_alt,
-          size: 40,
-          color: Color.fromARGB(255, 255, 255, 255),
-        ),
-        label: Text(
+        child: Text(
           widget.text,
           style: TextStyle(
             fontSize: 20,
