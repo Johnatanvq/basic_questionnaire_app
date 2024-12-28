@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class LabelText extends StatelessWidget {
   const LabelText ({
@@ -19,7 +19,7 @@ class LabelText extends StatelessWidget {
   Widget build (context){
     return Text(
       label,
-      style: TextStyle(
+      style: GoogleFonts.lato(
         fontSize: fontSize,
         color: fontColor,
         fontWeight: fontWeight,

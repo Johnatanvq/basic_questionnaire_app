@@ -40,7 +40,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               label: currentQuestion.text,
               fontSize: 25,
               fontColor: Color.fromARGB(255, 255, 255, 255),
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.bold,
             ),
             const SizedBox(
               height: 30,
