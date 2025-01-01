@@ -1,4 +1,3 @@
-import 'package:adv_basics/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:adv_basics/label_text.dart';
 
@@ -36,8 +35,9 @@ class WelcomeScreen extends StatelessWidget{
             style: OutlinedButton.styleFrom(
               side: const BorderSide(
                 width: 5, 
-                color: Color.fromARGB(255, 225, 0, 255)),
+                color: Color.fromARGB(255, 255, 0, 0)),
               foregroundColor: Color.fromARGB(255, 255, 255, 255),
+              backgroundColor: Color.fromARGB(255, 255, 0, 0),
               padding: EdgeInsets.symmetric(
                 vertical: 25,
                 horizontal: 20,
@@ -55,13 +55,6 @@ class WelcomeScreen extends StatelessWidget{
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 letterSpacing: 2,
-                shadows: [
-                  Shadow(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    offset: Offset(6, 2),
-                    blurRadius: 4,
-                  ),
-                ],
               )
             ),
           ),
