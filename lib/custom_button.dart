@@ -20,6 +20,9 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(context) {
     return Container(
+      margin: const EdgeInsets.only(
+        top: 30
+      ),
       child: OutlinedButton(
         onPressed: widget.onTap,
         style: OutlinedButton.styleFrom(

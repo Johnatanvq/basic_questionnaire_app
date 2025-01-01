@@ -20,13 +20,16 @@ class WelcomeScreen extends StatelessWidget{
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           SizedBox(
-            height: 20,
+            height: 40,
           ),
           LabelText(
-            label: 'Hola Johnatan!',
+            label: '¡BIENVENIDO AL QUIZ DE FLUTTER!',
             fontSize: 20,
-            fontColor: Colors.cyan,
+            fontColor: Color.fromARGB(255, 255, 255, 255),
             fontWeight: FontWeight.w500,
+          ),
+          SizedBox(
+            height: 60,
           ),
           OutlinedButton.icon(
             onPressed: startQuiz,
