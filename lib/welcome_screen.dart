@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget{
             height: 40,
           ),
           LabelText(
-            label: '¡BIENVENIDO AL QUIZ DE FLUTTER!',
+            label: 'Learn Flutter the fun way!',
             fontSize: 20,
             fontColor: Color.fromARGB(255, 255, 255, 255),
             fontWeight: FontWeight.w500,
