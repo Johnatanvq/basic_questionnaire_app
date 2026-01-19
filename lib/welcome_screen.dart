@@ -34,10 +34,10 @@ class WelcomeScreen extends StatelessWidget{
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               side: const BorderSide(
-                width: 5, 
-                color: Color.fromARGB(255, 255, 0, 0)),
+                width: 2, 
+                color: Color.fromARGB(255, 167, 167, 167)),
               foregroundColor: Color.fromARGB(255, 255, 255, 255),
-              backgroundColor: Color.fromARGB(255, 255, 0, 0),
+              backgroundColor: Color.fromARGB(255, 149, 0, 255),
               padding: EdgeInsets.symmetric(
                 vertical: 25,
                 horizontal: 20,
@@ -49,7 +49,7 @@ class WelcomeScreen extends StatelessWidget{
               color: Color.fromARGB(255, 255, 255, 255),
             ),
             label: Text(
-              'EMPEZAR',
+              'Start Quiz',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
