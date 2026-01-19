@@ -1,8 +1,9 @@
 <div align="start">
-  <h1>🧠 Interactive Quiz App</h1>
+  <h1>Interactive Quiz App</h1>
 
   <div align="center">
-    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/assets/images/home_screen.png" alt="Expense Tracker Demo" width="100%" />
+    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/home_screen.png" alt="Expense Tracker Demo" width="29%" />
+    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/questions_screen.png" alt="Expense Tracker Demo" width="30%" />
   </div>
   <p>
     <strong>A dynamic, state-driven application demonstrating core Flutter architecture and Dart logic.</strong>
@@ -20,7 +21,10 @@
   <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/">
     Flutter & Dart Udemy course
   </a>
-  <!-- <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/">
+</p>
+
+<p>
+  <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/">
     <img src="https://img.shields.io/badge/Curriculum-Flutter_%26_Dart_Complete_Guide-A435F0?style=flat&logo=udemy&logoColor=white" alt="Udemy Course">
-  </a> -->
+  </a>
 </p>
