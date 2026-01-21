@@ -10,7 +10,7 @@
   </p>
 </div>
 
-### 🚀 Key Competencies:
+### Key Competencies:
 
 * **State Management:** Proficient use of `StatefulWidget`, lifecycle methods (`initState`), and "lifting state up" pattern via callbacks.
 * **Advanced Dart:** Manipulation of complex collections (Maps & Lists) using `.map()` and spread operators (`...`) for dynamic generation.
