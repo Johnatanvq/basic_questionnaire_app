@@ -1,7 +1,6 @@
 <div align="start">
   <h1>Interactive Quiz App</h1><br/>
   
-  - Try it here: [Interactive Quiz App - webview](https://johnatanvq.github.io/basic_questionnaire_app/) <br/>
   
   <div align="center">
     <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/home_screen.png" alt="Expense Tracker Demo" width="29%" />
