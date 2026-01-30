@@ -3,8 +3,8 @@
   
   
   <div align="center">
-    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/home_screen.png" alt="Expense Tracker Demo" width="29%" />
-    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/questions_screen.png" alt="Expense Tracker Demo" width="30%" />
+    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/home_screen.png" alt="home_screen" width="29%" />
+    <img src="https://github.com/Johnatanvq/basic_questionnaire_app/blob/master/assets/images/questions_screen.png" alt="questions_screen" width="30%" />
   </div>
   <p>
     <strong>A dynamic, state-driven application demonstrating core Flutter architecture and Dart logic.</strong>
